@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="header">
+            <h1>Music Player</h1>
+        </div>
+        <div class="player-container">
+            <div class="song-info">
+                <p id="song-title">Song Title</p>
+                <p id="song-artist">Artist Name</p>
+                <p id="song-album">Album Name</p>
+            </div>
+            <div class="controls">
+                <button id="prev-button">⏮</button>
+                <button id="play-pause-button">▶</button>
+                <button id="next-button">⏭</button>
+            </div>
+            <input type="range" id="progress-bar" value="0" step="1">
+            <div class="volume-control">
+                <label for="volume-slider">Volume</label>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1">
+            </div>
+        </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist-container">
+                <!-- Songs will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
